@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmail.egorovsonalexey.lifegame">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <compatible-screens>
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="xlarge" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xxhdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xxxhdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="xlarge" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="xlarge" />
+        <screen
+            android:screenDensity="xxhdpi"
+            android:screenSize="xlarge" />
+        <screen
+            android:screenDensity="xxxhdpi"
+            android:screenSize="xlarge" />
+    </compatible-screens>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LifeGameFieldActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".SelectFileNameActivity"></activity>
+    </application>
+
+</manifest>
